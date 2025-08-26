@@ -21,3 +21,17 @@ Podemos utilizar os demais tipos de registros na consulta também, como:
 #### Decode de Base64
 
 - `echo 'base64code' | base64 --decode`
+
+### Aula 17
+
+- `docker compose up` - para executar os services dentro do arquivo `compose.yaml`
+- `docker compose up -d` - para executar o container em background
+- `docker compose up -d --force-recreate` - é o mesmo que executar `docker compose down` seguido de `docker compose up`
+- `docker ps -a` - para listar os container (inclusive os inativos)
+- `docker ps {nome-do-container} logs` - para checar os logs de um dado container
+- `sudo apt update` seguido de `sudo apt install postgresql-client` - para instalar apenas o client do postgres
+  `psql` - comando passível de utiliação para se conectar com o banco de dados local
+
+#### Docker com arquivo de Configuração fora da raíz
+
+- `docker compose -f infra/compose.yaml up -d`
