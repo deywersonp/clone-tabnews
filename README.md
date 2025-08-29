@@ -35,3 +35,9 @@ Podemos utilizar os demais tipos de registros na consulta também, como:
 #### Docker com arquivo de Configuração fora da raíz
 
 - `docker compose -f infra/compose.yaml up -d`
+
+### Aula 19
+
+- Remover dados sensíveis do Repositório `https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository`
+
+- Renomear arquivos usando o próprio Git e.g.: `git mv .env .env.development`
