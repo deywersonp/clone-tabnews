@@ -41,3 +41,8 @@ Podemos utilizar os demais tipos de registros na consulta também, como:
 - Remover dados sensíveis do Repositório `https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository`
 
 - Renomear arquivos usando o próprio Git e.g.: `git mv .env .env.development`
+
+# Atalhos VSCode
+
+- `code <filename>` - se existir, abre pra edita; se não existir, cria um novo.
+- `ctrl + p` - abre a fuzzy search (pesquisa por termos)

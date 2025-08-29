@@ -4,7 +4,10 @@
   "description": "### Aula 03 - `nvm install lts/hydrogen` => instala a versão primeiro, depois podemos fazer o set dela como padrão. - `nvm alias default ${version alias}` => utilizado para instalar uma versão do node informando o alias da versão, e.eg: hydrogen. - Criar o arquivo `.nvmrc` ajuda no controle de versão. Ao digitar `nvm install` no terminal do projeto, o mesmo vai buscar as informações dentro do nvmrc e fazer a instalação da versão recomendada lá. PS: importante deixar uma quebra de linha após informar o alias da versão dentro do arquivo `.nvmrc`.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
